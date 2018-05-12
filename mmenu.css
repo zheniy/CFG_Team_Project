@@ -57,6 +57,7 @@ html, body {
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 5;
 }
 
 .mm-menu .mm-navbar a,
@@ -106,7 +107,7 @@ html, body {
   border-bottom: 1px solid black;
 }
 
-.container {
+#my-button {
   margin: 0;
 }
 
