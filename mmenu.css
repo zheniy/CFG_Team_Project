@@ -12,19 +12,24 @@ html, body {
 }
 
 #menu.main-nav ul {
-  background: rgba(200, 0, 0, 1);
+  background: white;
   padding-left: 0;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 #menu.main-nav li {
-  padding: 5px 15px 5px 15px;
+  padding: 5px 20px 5px 20px;
+  margin: 0px 20px 0px 20px;
 }
 
 #menu.main-nav li a {
   text-decoration: none;
   font-size: 30px;
+  color: black;
+}
+
+#menu.main-nav li a:hover {
   color: white;
 }
 
@@ -32,8 +37,25 @@ html, body {
   display:inline-block;
 }
 
-#menu.main-nav li:hover {
-  background-color: black;
+#base-nav > li{
+  vertical-align: middle;
+}
+
+@media (min-width: 901px) {
+  .current, .current > a{
+    background-color: grey;
+    color: white !important;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 901px) {
+  #base-nav li:hover,
+  #base-nav li:hover > a {
+    background-color: black;
+    color: white !important;
+    border-radius: 50%;
+  }
 }
 
 #menu .openable ul {
@@ -45,12 +67,20 @@ html, body {
   margin-left: -15px;
 }
 
+#menu .openable li{
+  text-align: left;
+}
+
 #menu .openable:after{
     content: '';
     border: 5px solid transparent;
-    border-top: 5px solid white;
+    border-top: 5px solid black;
     margin-left: 2px;
     display: inline-block;
+}
+
+#menu .openable:hover:after{
+    border-top: 5px solid white;
 }
 
 .sticky {
@@ -62,20 +92,20 @@ html, body {
 
 .mm-menu .mm-navbar a,
 .mm-menu .mm-counter {
-  color: rgba(200, 0, 0, 0.8) !important;
+  color: white !important;
   font-size: 30px;
 }
 
 .mm-menu .mm-next:after,
 .mm-menu .mm-prev:before{
-  border-color: rgba(200, 0, 0, 0.8) !important;
+  border-color: white !important;
 }
 
 .mm-listview > li > a,
 .mm-listview > li > span {
    padding-top: 10px;
    padding-bottom: 10px;
-   color: rgba(200, 0, 0, 0.8);
+   color: white;
 }
 
 .mm-navbar + a img {
@@ -85,7 +115,7 @@ html, body {
 
 @media (min-width: 901px) {
   .stickyHead + .content {
-    padding-top: 68px;
+    padding-top: 91px;
   }
 }
 
@@ -107,8 +137,22 @@ html, body {
   border-bottom: 1px solid black;
 }
 
+@media (min-width: 901px){
+  .glyphicon.glyphicon-camera{
+    font-size: 40px;
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+}
+
+#camera{
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
 #my-button {
   margin: 0;
+  z-index: 5;
 }
 
 @media (max-width: 900px) {
