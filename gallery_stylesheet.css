@@ -1,0 +1,25 @@
+.modal-dialog
+{
+  width:600px;
+  max-width: 95vw
+}
+
+.thumbnail
+{
+  margin-bottom:6px;
+}
+
+.images *
+{
+  cursor: pointer;
+}
+#footer{
+  padding-top: 100px;
+  text-align: center;
+}
+.content{
+  padding-top: 50px;
+}
+#codefirst{
+  width: 25px;
+}
